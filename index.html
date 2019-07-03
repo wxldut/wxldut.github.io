@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="author" content="Tina Wong (www.tinawong.net)" />
+	<meta http-equiv="content-type" content="text/html;charset=gbk" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>Tina Wong's Home Page!</title>
+	<script type="text/javascript">	//Ctrl+Enter				
+		function submit(){
+			event = event || window.event;
+			if(event.ctrlKey && event.which == 13 || event.which == 10) { 			
+				document.getElementById("submit").click();
+			} else if (event.shiftKey && event.which==13 || event.which == 10) {
+				document.getElementById("submit").click();
+			}          
+		}
+	</script>
+	<script type="text/javascript">	//Deny Empty
+		function CheckInput(obj, sType){
+		  var msg=document.getElementById("err_msg");
+		  if(sType=='name'){
+		 msg.innerHTML=(!/^\s*(\S+)\s*$/gi.test(obj.value))? 'Name is empty!' : '√';
+		  }
+		  if(sType=='content'){
+		 msg.innerHTML=(!/^\s*(\S+)\s*$/gi.test(obj.value))? 'Content is empty!' : '√';
+		  }		  
+		}
+	</script> 
+</head>
+<body  onkeydown="submit()">
+	<div id="content">
+		<h1><span class="hr">Tina</span> Wong!</h1>
+		<ul id="top">
+			<li><a class="current" href="index.html">Home</a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="message.html">Message</a></li>
+			<li><a href="myresume.html">About me</a></li>
+		</ul>
+		
+		<div id="intro">
+			<p>Welcome to <a href="#">Tina Wong</a>'s Home Page! This page will give a brief introdution to myself, including my <a href="#1">EDUCATION EXPERIENCES</a>, <a href="#2">RESEARCH INTERESTS</a>, <a href="#3">ACADEMIC PUBLICATIONS</a> and the <a href="#4">NEWEST BLOGS</a>. You are welcome to leave any messages to me at the right-top link or contact me through the ways listed below my photo.</p>
+		</div>
+		<div id="left">
+			<h3><a name="1"></a><a href="#">EDUCATION EXPERIENCES</a></h3>
+			<hr>
+			<br />	
+			<i>Jul 2013 - Future</i>
+			<p>Employee of China's <a href="http://www.pingan.com/" target="_blank">Ping An Insurance (Group) Co., Ltd</a>, and work for Ping An Technology Co., Ltd., as a Software R&D Engineer.</p>			
+			<i>Sep 2012 - Present</i>
+			<p>Student Member of <a href="http://www.ccf.org.cn/" target="_blank">China Computer Federation(<i>CCF</i>)</a> and <a href="http://www.acm.org/" target="_blank">Association for Computing Machinery(<i>ACM</i>)</a>.</p>			
+			<i>Sep 2011 - Present</i>
+			<p>M.S. Candidate in Computer Science and Application Technology at <a href="http://ssdut.dlut.edu.cn/" target="_blank">School of Software</a>, <a href="http://www.dlut.edu.cn/" target="_blank">Dalian University of Technology(<i>DUT</i>)</a>, Dalian, China.</p>
+			<i>Aug 2007 - Jun 2011</i>
+			<p>B.S. Degree in Software Engineering(Japenese intensive) at <a href="http://ssdut.dlut.edu.cn/" target="_blank">School of Software</a>, <a href="http://www.dlut.edu.cn/" target="_blank">Dalian University of Technology(<i>DUT</i>)</a>, Dalian, China.</p>
+			<div align="right" class="link" style="padding-right:10px">
+			<h4><u><a href="myresume.html" target="_blank">My Resume &gt;&gt;</a>
+			<img src="images/new.gif" alt="HOT"></img></u></h4></div>
+			<br />
+			<h3><a name="2"></a><a href="#">RESEARCH INTERESTS</a></h3>
+			<hr>	
+			<br />
+			<p>Software Reliability Test</p>
+			<p>Complex Network Theories</p>
+			<!--<p>Formal Verification</p>-->
+			<p>Probabilistic Model Checking</p>
+		</div>
+		<div id="right">
+			<h3><a name="myphoto">My Photo</a></h3>
+			<a href="#"><img src="images/image.png" alt="image" /></a>
+		
+			<br /><br />
+			<h3><a name="contactinfo">Contact Info</a></h3>			
+			<!--<p>Blog: <u><a href="http://tinawong.sinaapp.com" target="_blank">tinawong.sinaapp.com</a></u></p>-->
+			<!--<p>Email: <u><a href="mailto://antian@2008.sina.com" target="_blank">antian@2008.sina.com</a></u></p>-->
+			<p>Tencent QQ: <u><a href="#">CodingのDancer(812825180)</a></u></p>
+			<p>Sina Weibo: <u><a href="http://weibo.com/antian2008" target="_blank">weibo.com/antian2008</a></u></p>			
+			<p>Present City: <u><a href="#contactinfo">Dalian 116621, China</a></u></p>			
+			<div align="left" class="link" style="padding-right:10px">
+			<h4><u><a href="message.html" target="_blank">Go to Leave A Message &gt;&gt;</a></u>
+			<img src="images/hot.gif" alt="HOT"></img></h4></div>			
+		</div>
+		<!--
+		<div id="right">			
+			<br /><br />
+			<h3><a name="messageform">Message Form</a></h3>		
+			<br />
+			<form action="message-post.php" method="post">
+			<table>
+			<tr><td><a>Name</a></td><td><input type="text" name="name" size="30" onblur="CheckInput(this, 'name')"></input></td></tr>
+			<tr><td><a>Email</a></td><td><input type="text" name="email" size="30"></input></td></tr>
+			<tr><td><a>Website</a></td><td><input type="text" name="website" size="30" value="http://"></input></td></tr>
+			<tr><td align="right" colspan="2"><textarea name="content" cols="35" rows="5" onblur="CheckInput(this, 'content')"></textarea></td></tr>
+			<tr><td align="right" colspan="2"><a>Ctrl+Enter </a><input type="submit" id="submit" name="submit" value="Submit"></input></td></tr>
+			<tr><td align="right" colspan="2"><a><span id="err_msg"></span></a></td></tr>
+			</table>
+			</form>
+		</div>
+		-->	
+		
+		<div id="footer">
+			<h3><a name="3"></a><a href="#">ACADEMIC PUBLICATIONS</a></h3>
+			<hr>
+			<br />
+			<p>[1] Kuanjiu Zhou, <u>Xiaolong Wang</u>, Gang Hou, Jie Wang, Shanbin Ai. Software Reliability Test Based on Markov Usage Model[J]. Journal of Software, Vol 7, No 9 (2012), 2061-2068, Sep 2012. (Ei Compendex) <a href="http://ojs.academypublisher.com/index.php/jsw/article/view/jsw070920612068" target="_blank">[<u>Paper Access</u>]</a></p>
+			<p>[2] Gang Hou, <u>Xiaolong Wang</u>, Kuanjiu Zhou. Network Model Construction and Cascading Effect Analysis for Software Systems[C]. 2012 3rd World Congress on Software Engineering (WCSE 2012), Wuhan, China, Nov 2012, Pages 9-12. (ISTP, Ei Compendex) <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6394915" target="_blank">[<u>Paper Access</u>]</a></p>
+			<p>[3] 侯刚, <u>王小龙</u>*, 王洁, 周宽久, 李瑞. 软件系统动态执行网络建模及级联效应分析[C]. 第五届信息安全漏洞分析与风险评估大会(VARA 2012), 2012年12月, 中国, 上海. <a href="dwlds/VARA2012-615625-PUB-ABS.pdf" target="_blank">[<u>Abstract Preview</u>]</a></p>
+			<p>[4] Kuanjiu Zhou, Jiawei Yong, <u>Xiaolong Wang</u>*, Longtao Ren, Gang Hou. Accelerating Software Model Checking based on Program Backbone[C]. Proceeding of APPT 2013, Stockholm, Sweden, LNCS 8299: 347–358. <a href="http://link.springer.com/chapter/10.1007/978-3-642-45293-2_26">[<u>Paper Access</u>]</a></p>
+			<p>[5] <u>王小龙</u>, 侯刚, 任龙涛, 周宽久, 常军旺, 王竹. 软件动态执行网络建模及其级联故障分析[J]. 计算机科学, 2013年全国理论计算机科学学术年会(NCTCS 2013), 2013年10月, 中国, 天津. <a href="#3">[<u>To be published</u>]</a></p>
+			<p>[6] 周宽久, 任龙涛, <u>王小龙</u>, 勇嘉伟, 侯刚. 基于层次化时间STM软件设计的形式化验证[J]. 计算机科学, 2013年全国理论计算机科学学术年会(NCTCS 2013), 2013年10月, 中国, 天津. <a href="#3">[<u>To be published</u>]</a></p>
+		</div>
+		
+		<div id="left">	
+			<h3><a name="4"></a><a href="#">NEWEST BLOGS</a></h3>
+			<hr>
+			<br />
+			<p><a href="http://tinawong.sinaapp.com/?p=395" target="_blank">发福利！SAE中级开发者推荐认证，名额有限，先到先得！</a><img src="images/new.gif" alt="NEW"></img></p>
+			<p><a href="http://tinawong.sinaapp.com/?p=292" target="_blank">reCAPTCHA：不仅仅是一个验证码！</a></p>
+			<p><a href="http://tinawong.sinaapp.com/?p=24" target="_blank">一个基于GAE的心愿墙网站设计与实现</a></p>			
+			<p><a href="http://tinawong.sinaapp.com/?p=48" target="_blank">给自己的博客加个捐助收款按钮吧[荐]</a></p>	
+			<h3><u><a href="http://tinawong.sinaapp.com/?p=447" target="_blank">Domains ON SALE &gt;&gt;</a></u><img src="images/hot.gif" alt="HOT"></img></h3>			
+			<div align="right" class="link" style="padding-right:10px"><a href="#">TOP</a></div>
+
+		</div>
+		<div id="right">
+			<h3><a href="links.html" target="_blank">My Links &gt;&gt;</a></h3>
+			<ul>
+				<li>Blog in SAE:<a href="http://tinawong.sinaapp.com" target="_blank">http://tinawong.sinaapp.com/</a></li>
+				<li>Lab in SAE:<a href="http://wxldutlab.sinaapp.com" target="_blank">http://wxldutlab.sinaapp.com/</a></li>
+				<!--<li>Wishes Wall in SAE:<a href="http://wisheswall.sinaapp.com" target="_blank">http://wisheswall.sinaapp.com/</a></li>-->
+				<!--<li>Wishes Wall in GAE:<a href="http://wishwall8008.appspot.com" target="_blank">http://wishwall8008.appspot.com/</a></li>-->
+				<li>Free Message Sender:<a href="http://freemsg.sinaapp.com" target="_blank">http://freemsg.sinaapp.com/</a></li>
+				<li>Weixin Chengyu Game:<a href="http://wxldutlab.sinaapp.com/chengyu" target="_blank">http://wxldutlab.sinaapp.com/chengyu/</a></li>				
+			</ul>
+		</div>
+		
+		<div id="footer">
+			<p id="r"><a href="http://wxldut.sinaapp.com">Copyright &copy; WXL@DUT</a>&nbsp;&nbsp;&nbsp;<script src="http://s4.cnzz.com/stat.php?id=4789586&web_id=4789586&show=pic" language="JavaScript"></script></p>
+			<p>Design: <a href="http://www.solucija.com/">Luka Cvrk</a> &middot; Sponsored by <a href="http://sae.sina.com.cn/">SinaAppEngine</a> &middot; Released under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Licence</a></p>
+		</div>
+	</div>
+</body>
+</html>
